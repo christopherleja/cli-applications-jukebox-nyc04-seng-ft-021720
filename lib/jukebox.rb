@@ -8,13 +8,9 @@ def help
   puts "- exit : exits this program"
 end
 
-help
-
 def list(songs)
   songs.each_with_index { |i, index| puts "#{index+1}. #{i}"}
 end
-
-list(songs)
 
 def play(songs)
   puts "Please enter a song name or number: "
@@ -27,8 +23,6 @@ def play(songs)
     puts "Invalid input, please try again"
   end
 end
-
-play(songs)
 
 def exit_jukebox
   puts "Goodbye"
