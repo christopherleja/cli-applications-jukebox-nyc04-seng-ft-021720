@@ -15,7 +15,7 @@ end
 def play(songs)
   puts "Please enter a song name or number: "
   choice = gets.strip
-  if (1..9).to_a.include(choice.to_i)
+  if (1..9).to_a.include?(choice.to_i)
     puts "Playing #{songs[choice.to_i - 1]}"
   elsif songs.include?(choice)
     puts "Playing #{choice}"
